@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background changer</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 20px 100px;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 18px;
+        text-align: justify;
+      }
+
+      .btn {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        border: solid grey 2px;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+      #white {
+      }
+      #aqua {
+        background-color: aquamarine;
+      }
+      #violet {
+        background-color: #ce9aff;
+      }
+      #black {
+        background-color: black;
+      }
+      #color-switcher {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="color-switcher">
+      <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+      <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+      <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+      <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="https://i0.wp.com/thewritecopygirl.com/wp-content/uploads/2023/01/Define-Thought-Leadership-In-Your-Niche.jpg?resize=922%2C519&ssl=1"
+      alt=""
+    />
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem labore
+      voluptas, temporibus ullam quis exercitationem laudantium, similique unde,
+      quaerat quod delectus! Nisi ipsam odit autem vero. Atque quisquam
+      veniamnostrum corporis perferendis velit expedita ut, harum nulla laborum
+      eum officiis est minus porro reiciendis aliquidnon itaque commodi
+      molestias quia! Error architecto, magnamcumque iste eaque accusamus eum
+      temporibus animi culpa assumenda iure aliquam fuga nihil natus ipsa
+      perspiciatis nisi inventore quo aspernatur voluptatum quod quisquam
+      cupiditate! Rem a d oloribus ipsam explicabo illo suscipit excepturi modi
+      quo, tenetur veniam similique officia dolor provident molestiae
+      consequatur totam vero repellat nobis, fugiat, reiciendis autem id qui?
+      Explicabo voluptas accusamus dolore, v eritatis adipisci enim quas ex
+      dolorem iste amet quam eum cumque recusandae dolor consectetur voluptate
+      animi! Nostrum veniam quidem soluta? Velit quidem et doloribus, quia at
+      itaque aperiam temporibus error inventore magnam. Esse eius excepturi
+      quas, ad at cumque exercitationem? Laudantium nihil quos facere
+      reprehenderit quo suscipit aliquid inventore impedit delectus nisi
+      excepturi commodi deleniti possimus nemo atque, esse et molestias!
+      Reiciendis perspiciatis, dolor odit laboriosam tenetur porro assumenda eos
+      voluptatum delectus deleniti. Sint quasi fuga culpa itaque, laboriosam
+      acere provident vero exercitationem porro officia ducimus laborum illo
+      dignissimos id debitis voluptatibus, nihil reprehenderit, natus commodi
+      hic accusamus molestias aliquid consectetur odit! Sapiente tenetur vel,
+      hic recusandae error fuga quod repellat deserunt dignissimos, illo
+      voluptate. Porro, quae. Corrupti, ad ipsa. Ratione sed earum nihil
+      assumenda nemo, hic accusantium ullam ducimus dolores numquam minima quae
+      ipsum deserunt quas voluptas facere! Repell endus magnam ipsum dignissimos
+      animi nobis sed, molestias eligendi. Quas rem a ea sapiente iste aut
+      quibusdam? Quis, eius culpa soluta qui alias possimus vel commodi ut
+      placeat doloremque tenetur quam nisi iste cum sed amet delectus saepe!
+      Totam accusamus delectus velit ea. Dolorum deserunt odio cumque suscipit,
+      eaque, quam dolor deleniti dolore sint modi error. Quibusdam quas aut
+      maiores iste, consequuntur officiis. Unde nemo nostrum, tempora, cum
+      tenetur sa epe rerum veritatis aut commodi numquam inventore blanditiis,
+      consequatur ratione quidem sequi explicabo ea! Magnam sapiente debitis
+      doloremque repudiandae qui hic mollitia temporibus minima quod
+      necessitatibus officia autem obcaeca ti velit officiis odit nisi magni
+      libero, sed quisquam. Ducimus inventore nam nesciunt ex harum ullam
+      doloremque ali as nulla dolorem nemo, nihil tempora dolores quasi
+      officiis, enim odit ab dolore expedita quibusdam ea odio? Eligend i beatae
+      labore quae, deleniti quibusdam officia repudiandae! Dolore repellat,
+      earum deleniti delectus, pariatur vel porro laudantium illo odit sed qui.
+      Ea obcaecati quaerat ipsam maxime distinctio accusantium quae omnis
+      molestias, et neque. Obcaecati dolores, odit rem ut nisi nostrum facilis
+      ullam. Atque deleniti quibusdam, blanditiis ipsam quae magnam, consectetur
+      ratione aliquid doloremque officiis exercitationem
+    </p>
+
+    <script>
+      function changeBG(color) {
+        document.body.style.backgroundColor = color;
+        let txt = document.getElementsByClassName("text");
+        if (color == "#000000") {
+          for (let elm of txt) {
+            elm.style.color = "white";
+          }
+        } else {
+          for (let elm of txt) {
+            elm.style.color = "black";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Navbar</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+    }
+    #header {
+      text-align: center;
+    }
+    #logo {
+      width: 250px;
+      height: auto;
+    }
+    #menu-bar {
+      text-align: center;
+      background-color: cadetblue;
+    }
+    #menu-bar li {
+      display: inline-block;
+      padding: 15px 10px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    #container {
+      text-align: center;
+      padding: 50px 100px;
+    }
+    #about-img {
+      width: 100%;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    p{
+
+        text-align: justify;
+    }
+  </style>
+
+  <body>
+    <div id="header">
+      <img src="Logo.png" id="logo" alt="" />
+    </div>
+    <nav id="menu-bar">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Our Team</li>
+      <li>Client</li>
+      <li>Conact Us</li>
+    </nav>
+    <div id="container">
+      <h1>About Us</h1>
+      <img
+        id="about-img"
+        src="https://i0.wp.com/thewritecopygirl.com/wp-content/uploads/2023/01/Define-Thought-Leadership-In-Your-Niche.jpg?resize=922%2C519&ssl=1"
+        alt=""
+      />
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        quidem natus non assumenda saepe maxime vero dignissimos quam placeat
+        earum iusto deleniti facere veritatis dolor enim deserunt explicabo,
+        facilis praesentium est blanditiis. Molestias, cupiditate. Natus
+        pariatur commodi ipsa et quis corrupti, deleniti culpa. Quia eveniet
+        adipisci dolore! Blanditiis alias quae et cum qui facere velit nihil,
+        fuga enim debitis sapiente accusamus sint nulla porro molestiae? Nemo
+        voluptatum neque odit soluta architecto itaque, necessitatibus ratione
+        mollitia repudiandae velit eveniet, dignissimos pariatur blanditiis
+        dolorum a sapiente consequuntur quisquam beatae ad omnis officia vitae
+        excepturi iusto reprehenderit? Officiis, quibusdam molestias soluta
+        impedit cumque officia maiores eum nemo, dolore cupiditate non illo
+        tenetur nulla est mollitia ex possimus! Odio ducimus facilis molestias,
+        veniam quam culpa corrupti. Quia nobis reprehenderit possimus illum nam
+        quidem quos eius, illo velit voluptatem, saepe aliquid impedit voluptas
+        voluptate enim vero vitae suscipit voluptates. Ab cum totam non quae,
+        iusto tenetur maiores sed ipsa dolor facilis reiciendis, neque veniam
+        dolores repudiandae quasi explicabo unde pariatur omnis dolorum?
+        Voluptates explicabo vero saepe? At corrupti nostrum consequuntur
+        maiores itaque pariatur asperiores qui. Ut, omnis, quis repellendus quod
+        delectus natus sint cum nesciunt earum rem similique dolorum eos
+        consequuntur pariatur voluptates, optio veritatis alias animi iure. Odio
+        explicabo sint, dolorem totam iste quaerat excepturi quisquam ea?
+        Necessitatibus ex voluptatem numquam id, optio voluptas ipsa corrupti
+        aliquam mollitia. Sunt similique veniam, facere nisi excepturi
+        cupiditate, quod mollitia, consectetur odio dolore ipsam perferendis rem
+        nesciunt debitis officia enim laborum et id est quo? Quam, recusandae
+        vel. Voluptate sint dicta maxime beatae rerum rem quam necessitatibus.
+        Enim dolorum error, quaerat impedit quae ipsa dolore quo laborum
+        recusandae, voluptatibus animi dolor eligendi? Illo sunt doloremque
+        neque dolorem, dolores consequuntur nesciunt rem ut, eveniet, ab nulla.
+        Numquam eius vero veritatis praesentium voluptatem eaque maiores
+        reprehenderit, ipsum sed debitis dolorem ratione libero culpa reiciendis
+        quod, at, impedit dicta in saepe. Accusamus illo harum optio unde totam
+        reprehenderit dolor itaque aspernatur? Molestias non assumenda,
+        consequatur pariatur possimus quibusdam expedita iusto ut sed voluptas,
+        officia eos aut laudantium quisquam quae dolor ab earum alias laborum
+        sint recusandae nulla quis. Vero quos itaque, necessitatibus obcaecati
+        eius adipisci blanditiis voluptate at nisi neque vitae ducimus beatae
+        rem perspiciatis doloremque harum nulla dolores molestiae ab quidem?
+        Corporis tenetur maxime nobis illo expedita officia, alias suscipit,
+        reiciendis officiis, deserunt non totam. Itaque, voluptate eveniet.
+        Nostrum dignissimos laborum blanditiis minus dolorum. Ipsa at dicta
+        neque sint quisquam magni modi laudantium veritatis rem veniam. Fugit
+        consequuntur, ea aliquid error velit eius laboriosam dolor non
+        exercitationem labore quidem commodi maxime accusantium temporibus
+        ducimus neque, delectus dolorum. Magni, quibusdam cupiditate explicabo
+        atque, aliquid dolores aspernatur aliquam magnam corrupti ducimus
+        voluptatibus unde? Adipisci repudiandae error illum odio pariatur ullam
+        repellat culpa dolores animi itaque expedita exercitationem, eaque
+        doloribus iusto dolorum, distinctio fugit quae minus similique non
+        debitis ut vero corrupti. Blanditiis laborum odio fugit quae quaerat
+        pariatur ducimus adipisci optio, nihil explicabo excepturi neque ratione
+        illo necessitatibus, impedit ab provident cumque aliquid et atque
+        debitis a! Nostrum itaque molestias obcaecati!
+      </p>
+    </div>
+    <script>
+        window.addEventListener('scroll',function(){
+            let navbar= document.getElementById("menu-bar");
+            if(window.pageYOffset>=190){
+           navbar.classList.add('sticky');
+            }else{
+               navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+  </body>
+</html>
